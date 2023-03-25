@@ -11,6 +11,8 @@ data = pd.read_csv("data/car.data")
 
 pre = preprocessing.LabelEncoder()
 
+# Converting 'str' values to 'int'
+
 buying = pre.fit_transform(list(data['buying']))
 maint = pre.fit_transform(list(data['maint']))
 door = pre.fit_transform(list(data['door']))
